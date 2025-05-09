@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492940484054",
+    "project_id": "facetime22-2a60a",
+    "storage_bucket": "facetime22-2a60a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492940484054:android:94f3b8bdbe2db6ff675877",
+        "android_client_info": {
+          "package_name": "com.shirusms.secure_facetime2.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYM-W9VMd5mr4R-hjm0LCakTeqTv74IJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

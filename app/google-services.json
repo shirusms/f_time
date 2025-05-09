@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "161093923322",
+    "project_id": "fireshiro675",
+    "storage_bucket": "fireshiro675.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161093923322:android:2a16f79c41a27a6320b443",
+        "android_client_info": {
+          "package_name": "com.shirusms.secure_facetime2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA4iImLyL8nISSg8Iy--7jQ4SLKMuRyI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
