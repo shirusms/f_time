@@ -51,6 +51,27 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation ("androidx.compose.material:material-icons-extended:1.6.0")
 
+    // Firebase Bill of Materials (BOM) - Manages Firebase versions automatically
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+
+
+
+
+
+    // Firebase Realtime Database
+    implementation (libs.firebase.database)
+
+
+    // AndroidX Credentials API (if needed)
+    implementation ("androidx.credentials:credentials:1.2.0")
+
+    implementation("com.google.accompanist:accompanist-permissions:0.31.5-beta")
+
+
+
+
+
+
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)

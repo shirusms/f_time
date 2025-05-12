@@ -1,6 +1,5 @@
 package com.shirusms.secure_facetime2.ui.theme.screens.login
 
-
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -8,12 +7,16 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import androidx.navigation.NavHostController
 import com.shirusms.secure_facetime2.model.AuthViewModel
+import com.shirusms.secure_facetime2.navigation.ROUTE_REGISTER
 import com.shirusms.secure_facetime2.ui.theme.Secure_FaceTime2Theme
 
 
 @Composable
 fun LoginScreen(
+    navController: NavController,
     onLoginSuccess: () -> Unit = {},
     authViewModel: AuthViewModel
 ) {
@@ -63,12 +66,27 @@ fun LoginScreen(
             Text("Login")
         }
 
+
         if (errorMessage.isNotEmpty()) {
             Spacer(modifier = Modifier.height(16.dp))
             Text(text = errorMessage, color = MaterialTheme.colorScheme.error)
         }
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center
+        ) {
+            Text("Don't have an account?")
+            Spacer(modifier = Modifier.width(4.dp))
+            TextButton(onClick = {
+                navController.navigate(ROUTE_REGISTER)
+            }) {
+                Text("Register")
+            }
+        }
     }
 }
+
+
 
 @Preview(showBackground = true)
 @Composable
